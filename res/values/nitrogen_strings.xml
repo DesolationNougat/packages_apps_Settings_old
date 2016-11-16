@@ -27,6 +27,10 @@
     <string name="summary_dashboard_conditions_enabled">Dashboard conditions are enabled</string>
     <string name="summary_dashboard_conditions_disabled">Dashboard conditions are disabled</string>
 
+    <!-- Desolation Settings -->
+    <string name="deso_settings_title">Desolated Core</string>
+    <string name="header_category_deso">Desolation</string>
+
     <!-- Battery saver color -->
     <string name="battery_saver_color_title">Warning color</string>
     <string name="battery_saver_color_summary">Enable orange status - navigation bars when battery saver is activated</string>
