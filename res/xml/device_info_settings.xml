@@ -21,55 +21,19 @@
                           android:enabled="false"
                           android:layout="@layout/deso_logo_row" />
 
-        <!-- System update settings - launches activity -->
+        <!-- System update settings - launches activity
         <PreferenceScreen android:key="system_update_settings"
                 android:title="@string/system_update_settings_list_item_title"
                 android:summary="@string/system_update_settings_list_item_summary">
             <intent android:action="android.settings.SYSTEM_UPDATE_SETTINGS" />
         </PreferenceScreen>
-
-        <PreferenceScreen android:key="additional_system_update_settings"
-                          android:title="@string/additional_system_update_settings_list_item_title">
-            <intent android:action="android.intent.action.MAIN"
-                    android:targetPackage="@string/additional_system_update"
-                    android:targetClass="@string/additional_system_update_menu" />
-        </PreferenceScreen>
+        -->
 
         <!-- Device status - launches activity -->
         <PreferenceScreen android:key="status_info"
                 android:title="@string/device_status"
                 android:summary="@string/device_status_summary"
                 android:fragment="com.android.settings.deviceinfo.Status">
-        </PreferenceScreen>
-
-        <!-- Manual -->
-        <PreferenceScreen
-                android:key="manual"
-                android:title="@string/manual">
-            <intent android:action="android.settings.SHOW_MANUAL" />
-        </PreferenceScreen>
-
-        <!-- Legal Information -->
-        <PreferenceScreen
-                android:key="container"
-                android:title="@string/legal_information"
-                android:fragment="com.android.settings.LegalSettings" />
-
-        <PreferenceScreen
-                android:key="regulatory_info"
-                android:title="@string/regulatory_labels">
-            <intent android:action="android.settings.SHOW_REGULATORY_INFO" />
-        </PreferenceScreen>
-
-        <PreferenceScreen
-                android:key="safety_info"
-                android:title="@string/safety_and_regulatory_info">
-                <intent android:action="android.settings.SHOW_SAFETY_AND_REGULATORY_INFO" />
-        </PreferenceScreen>
-
-        <!-- Feedback on the device -->
-        <PreferenceScreen android:key="device_feedback"
-                android:title="@string/device_feedback">
         </PreferenceScreen>
 
         <!-- Device hardware model -->
@@ -84,6 +48,13 @@
                 android:enabled="false"
                 android:shouldDisableView="false"
                 android:title="@string/firmware_version"
+                android:summary="@string/device_info_default"/>
+
+        <!-- Desolation version -->
+        <Preference android:key="deso_version"
+                android:enabled="false"
+                android:shouldDisableView="false"
+                android:title="@string/deso_version"
                 android:summary="@string/device_info_default"/>
 
         <!-- Security patch level -->
